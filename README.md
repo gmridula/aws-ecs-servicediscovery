@@ -6,11 +6,11 @@ This provides two docker containers: backend and worker. Both run simple flask a
 Clean Up: Since the services created the hosted zones, they will have to be deleted first and deletion of the namespace will take care of cleaning up the route53 hosted zones.
 
 GO TO AWS Console
-Step 1: ECS >> Clusters >> Select the Cluster >> Go to Services >> Delete the Services
+Step 1: ECS >> Clusters >> Select the Cluster >> Go to Services >> Delete the Services                                           
 Step 2: Delete the cluster from the AWS console
-Step 3: Get the list of services
+Step 3: Get the list of services from CLI to make sure the services are cleaned up
         aws servicediscovery list-services
-Step 4: Delete the services
+Step 4: Delete the services if they still show up
         aws servicediscovery delete-service --id=<id>
 Step 5: List the namespaces
         aws servicediscovery list-namespaces

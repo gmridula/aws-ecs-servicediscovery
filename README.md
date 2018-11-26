@@ -11,6 +11,6 @@ GO TO AWS Console
  3. Verify that the services are cleaned up from AWS CLI by using the command ***aws servicediscovery list-services***
  4. Delete the services if they still show up from CLI using command: ***aws servicediscovery delete-service --id=id_name***
  5. List the namespaces using CLI command: ***aws servicediscovery list-namespaces***
- 6. Delete the namespaces: ***aws servicediscovery delete-namespace --id=id_name ***
+ 6. Delete the namespaces: ***aws servicediscovery delete-namespace --id=id_name***
 
 

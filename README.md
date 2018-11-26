@@ -11,9 +11,9 @@ Step 2: Delete the cluster from the AWS console
 Step 3: Get the list of services from CLI to make sure the services are cleaned up
         aws servicediscovery list-services
 Step 4: Delete the services if they still show up
-        aws servicediscovery delete-service --id=<id>
+        aws servicediscovery delete-service --id=id_name
 Step 5: List the namespaces
         aws servicediscovery list-namespaces
 Step 6: Delete the namespaces
-        aws servicediscovery delete-namespace --id=<id>   
+        aws servicediscovery delete-namespace --id=id_name  
 
